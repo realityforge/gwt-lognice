@@ -26,6 +26,8 @@ define 'gwt-lognice' do
                 :draft_compile => (ENV['FAST_GWT'] == 'true'),
                 :dependencies => [:javax_validation, :javax_validation_sources] + project.compile.dependencies)
 
+  test.using :testng
+
   package(:jar).include("#{_(:source, :main, :java)}/*")
   package(:sources)
   package(:javadoc)
