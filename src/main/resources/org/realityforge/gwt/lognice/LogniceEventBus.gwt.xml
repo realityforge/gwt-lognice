@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <inherits name="com.google.gwt.logging.LoggingDisabled"/>
+  <inherits name="com.google.gwt.place.Place"/>
+
+  <source path=''>
+    <include name='LoggingEventBus.java'/>
+  </source>
+</module>

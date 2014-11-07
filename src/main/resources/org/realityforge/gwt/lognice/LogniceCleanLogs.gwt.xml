@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <inherits name="com.google.gwt.logging.LoggingDisabled"/>
+
+  <source path=''>
+    <include name='SimpleLogger.java'/>
+    <include name='ExceptionUtil.java'/>
+    <include name='LogniceCleanLogs.java'/>
+  </source>
+
+  <entry-point class="org.realityforge.gwt.lognice.LogniceCleanLogs"/>
+</module>
