@@ -1,3 +1,5 @@
+## 0.3 (Pending):
+
 ## 0.2:
 
 * Support a simplified log format for dev mode logger.
