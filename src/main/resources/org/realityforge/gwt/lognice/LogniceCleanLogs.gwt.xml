@@ -3,7 +3,9 @@
   <inherits name="com.google.gwt.logging.LoggingDisabled"/>
 
   <source path=''>
-    <include name='SimpleLogger.java'/>
+    <include name='SimpleConsoleLogHandler.java'/>
+    <include name='SimpleFormatter.java'/>
+    <include name='SimpleDevModeLogHandler.java'/>
     <include name='ExceptionUtil.java'/>
     <include name='LogniceCleanLogs.java'/>
   </source>

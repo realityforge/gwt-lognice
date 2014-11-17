@@ -1,6 +1,8 @@
 package org.realityforge.gwt.lognice;
 
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.logging.client.ConsoleLogHandler;
+import com.google.gwt.logging.client.DevelopmentModeLogHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -11,13 +13,31 @@ public final class LogniceCleanLogs
   public void onModuleLoad()
   {
     final Logger logger = Logger.getLogger( "" );
-    //In GWT 2.7 it is necessary to remove the old handlers
+    boolean addConsoleLogHandler = false;
+    boolean addDevModeLogHandler = false;
     for ( final Handler h : logger.getHandlers() )
     {
       logger.removeHandler( h );
+      if ( h instanceof ConsoleLogHandler )
+      {
+        addConsoleLogHandler = true;
+      }
+      if ( h instanceof DevelopmentModeLogHandler )
+      {
+        addDevModeLogHandler = true;
+      }
     }
-    final SimpleLogger handler = new SimpleLogger();
-    handler.setLevel( Level.ALL );
-    logger.addHandler( handler );
+    if ( addConsoleLogHandler )
+    {
+      final SimpleConsoleLogHandler handler = new SimpleConsoleLogHandler();
+      handler.setLevel( Level.ALL );
+      logger.addHandler( handler );
+    }
+    if ( addDevModeLogHandler )
+    {
+      final SimpleDevModeLogHandler handler = new SimpleDevModeLogHandler();
+      handler.setLevel( Level.ALL );
+      logger.addHandler( handler );
+    }
   }
 }
