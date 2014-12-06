@@ -1,4 +1,4 @@
-## 0.3 (Pending):
+## 0.3:
 
 * Automatically replace SimpleEventBus with LoggingEventBus if the LogniceEventBus modules is included.
 
