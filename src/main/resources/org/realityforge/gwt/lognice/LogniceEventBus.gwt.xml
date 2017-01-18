@@ -6,4 +6,8 @@
   <source path=''>
     <include name='LoggingEventBus.java'/>
   </source>
+
+  <replace-with class="iris.realityforge.gwt.lognice.LoggingEventBus">
+    <when-type-is class="com.google.gwt.event.shared.SimpleEventBus"/>
+  </replace-with>
 </module>
