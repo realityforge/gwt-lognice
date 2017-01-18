@@ -1,3 +1,5 @@
+## 0.5 (Pending):
+
 ## 0.4:
 
 * Ensure `java.util.logging.SimpleConsoleLogHandler` is recognized as a console logger as it appears
