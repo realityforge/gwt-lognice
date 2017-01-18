@@ -18,7 +18,8 @@ public final class LogniceCleanLogs
     for ( final Handler h : logger.getHandlers() )
     {
       logger.removeHandler( h );
-      if ( h instanceof ConsoleLogHandler )
+      if ( h instanceof ConsoleLogHandler ||
+           h.getClass().getName().equals( "java.util.logging.SimpleConsoleLogHandler" ) )
       {
         addConsoleLogHandler = true;
       }
