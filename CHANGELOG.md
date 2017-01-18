@@ -1,4 +1,4 @@
-## 0.3 (Pending):
+## 0.3:
 
 * Ensure `java.util.logging.SimpleConsoleLogHandler` is recognized as a console logger as it appears
   in superdev mode in GWT 2.8.
