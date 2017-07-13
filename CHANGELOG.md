@@ -1,3 +1,5 @@
+## 0.6 (Pending):
+
 ## 0.5:
 
 * Add `BrowserExceptionUtil` to aid debugging in browser.
