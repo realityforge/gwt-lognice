@@ -23,7 +23,7 @@ define 'gwt-lognice' do
   gwt(['org.realityforge.gwt.lognice.Lognice'],
                 :java_args => %w(-Xms512M -Xmx1024M),
                 :draft_compile => (ENV['FAST_GWT'] == 'true'),
-                :dependencies => [:javax_validation, :javax_validation_sources] + project.compile.dependencies)
+                :dependencies => [:javax_validation, :javax_validation_sources] + project.compile.dependencies) unless ENV['GWT'] == 'no'
 
   test.using :testng
 
