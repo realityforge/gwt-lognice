@@ -17,7 +17,7 @@ into the build system. i.e.
 <dependency>
    <groupId>org.realityforge.gwt.lognice</groupId>
    <artifactId>gwt-lognice</artifactId>
-   <version>0.2</version>
+   <version>0.5</version>
    <scope>provided</scope>
 </dependency>
 ```
