@@ -1,5 +1,4 @@
-gwt-lognice
-===========
+# gwt-lognice
 
 [![Build Status](https://secure.travis-ci.org/realityforge/gwt-lognice.png?branch=master)](http://travis-ci.org/realityforge/gwt-lognice)
 [<img src="https://img.shields.io/maven-central/v/org.realityforge.gwt.lognice/gwt-lognice.svg?label=latest%20release"/>](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.realityforge.gwt.lognice%22%20a%3A%22gwt-lognice%22)
@@ -9,8 +8,7 @@ library removes all the log prefix when emitting messages. It also
 provides a replacement for the EventBus that logs the events as they
 are fired.
 
-Quick Start
-===========
+## Quick Start
 
 The simplest way to use the library is to add the following dependency
 into the build system. i.e.
