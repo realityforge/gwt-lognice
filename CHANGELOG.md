@@ -1,4 +1,6 @@
-## 0.6 (Pending):
+## 0.6:
+
+* Introduce `BrowserExceptionUtil.gwt.xml` to expose `BrowserExceptionUtil` class to GWT.
 
 ## 0.5:
 

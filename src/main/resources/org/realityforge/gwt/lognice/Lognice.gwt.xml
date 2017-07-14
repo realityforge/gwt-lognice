@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
+  <inherits name="org.realityforge.gwt.lognice.BrowserExceptionUtil"/>
   <inherits name="org.realityforge.gwt.lognice.LogniceCleanLogs"/>
   <inherits name="org.realityforge.gwt.lognice.LogniceEventBus"/>
 </module>
